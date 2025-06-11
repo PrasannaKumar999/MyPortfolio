@@ -1,7 +1,7 @@
 import { css } from "styled-components";
 export const headerStyles = css`
   .headerContainer {
-    /* background-color: rgb(28 30 69); */
+    background-color: rgb(3 3 3 / 45%);
     color: rgb(147 197 253 / 1);
     padding: 30px 24px;
     text-align: center;
