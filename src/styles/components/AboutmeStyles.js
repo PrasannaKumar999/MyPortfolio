@@ -56,4 +56,29 @@ export const aboutmeStyles = css`
     font-weight: 500;
     color: #939393;
   }
+
+  @media screen and (max-width: 960px) {
+    .aboutmeContainer {
+      width: 100%;
+    }
+    .boxes {
+      flex-direction: column;
+    }
+    .aboutmeBoxes {
+      width: 100%;
+      padding: 0px 24px;
+      box-sizing: border-box;
+    }
+    .boxTitle{
+      text-align: center;
+      font-size: 14px;
+      line-height: 12px;
+    }
+    .box{
+      gap: 12px;
+    }
+    .boxdesc{
+      font-size: 12px;
+    }
+  }
 `;

@@ -13,6 +13,17 @@ export const ProjectCardStyles = css`
     overflow: hidden;
     transition: transform 0.4s ease, box-shadow 0.4s ease;
     border: 1px solid #e2e8f0;
+
+    background: #f8fafc;
+    border-radius: 16px;
+    overflow: hidden;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    border: 1px solid #e2e8f0;
+  }
+  .cardContainer:hover {
+    transform: scale(1.05);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   }
   .imageContainer {
     height: 150px;
@@ -68,5 +79,33 @@ export const ProjectCardStyles = css`
     border-radius: 20px;
     font-size: 14px;
     width: fit-content;
+    cursor: pointer;
+    background: linear-gradient(90deg, #6366f1, #3b82f6);
+    transition: transform 0.3s ease;
+  }
+
+  .projectCta :hover {
+    background-color: red;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  }
+
+  @media screen and (max-width: 768px) {
+    .bottomContainer {
+      gap: 10px;
+    }
+    .projectName {
+      font-size: 14px;
+      line-height: 16px;
+      color: #1f2937;
+      font-weight: 600;
+    }
+    .cardContainer {
+      max-width: 100%;
+      margin: 0px 20px;
+    }
+    .projectDesc {
+      font-size: 12px;
+    }
   }
 `;
