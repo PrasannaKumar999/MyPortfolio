@@ -25,6 +25,7 @@ export const headerStyles = css`
     font-size: 30px;
     font-weight: bold;
     color: #93c5fd;
+    cursor: pointer;
   }
   .rightHeader {
     display: flex;
@@ -64,6 +65,12 @@ export const headerStyles = css`
   }
   .menuIcon {
     display: none;
+  }
+  .btnDownload {
+    border: 1px solid #2d2e96;
+    border-radius: 12px;
+    padding: 12px 16px;
+    cursor: pointer;
   }
 
   @media screen and (max-width: 768px) {

@@ -3,7 +3,7 @@ import { headerStyles } from "../styles/components/HeaderStyles";
 import { useState } from "react";
 
 const Header = ({ onLinkClick }) => {
-  const sections = ["Home", "About", "Projects", "Skills", "Contact"];
+  const sections = ["About", "Skills", "Projects", "Contact"];
   const [menuPopup, setMenuPopup] = useState(false);
 
   return (
@@ -11,7 +11,9 @@ const Header = ({ onLinkClick }) => {
       <style jsx>{headerStyles}</style>
       <div className="headerContainer">
         <div className="commonContainer">
-          <div className="name">Portfolio</div>
+          <div className="name" onClick={() => onLinkClick("Home")}>
+            Portfolio
+          </div>
           <div className="rightHeader">
             {sections.map((section) => (
               <div className="section" onClick={() => onLinkClick(section)}>
@@ -19,6 +21,7 @@ const Header = ({ onLinkClick }) => {
               </div>
             ))}
           </div>
+          <div className="btnDownload">Download CV</div>
           <div className="menuIcon" onClick={() => setMenuPopup(!menuPopup)}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
