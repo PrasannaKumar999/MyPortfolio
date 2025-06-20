@@ -74,6 +74,11 @@ export const ContactStyles = css`
   .detailDesc {
     color: black;
     font-weight: 500;
+    cursor: pointer;
+    word-break: break-all;
+  }
+  .detailDesc > a {
+    all: unset;
   }
   .rightContainer {
     flex: 1;
@@ -111,5 +116,15 @@ export const ContactStyles = css`
     background: linear-gradient(90deg, #6366f1, #3b82f6);
     transition: transform 0.3s ease;
     margin-left: auto;
+  }
+
+  @media screen and (max-width: 768px) {
+    .contactBottomContainer {
+      flex-direction: column;
+      padding: 0px 24px;
+    }
+    .rightContainer{
+      gap: 20px;
+    }
   }
 `;

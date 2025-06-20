@@ -24,7 +24,6 @@ export const aboutmeStyles = css`
     align-items: center;
     justify-content: center;
     gap: 32px;
-    margin-top: 32px;
   }
   .boxes {
     display: flex;
