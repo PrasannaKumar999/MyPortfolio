@@ -1,4 +1,4 @@
-import { aboutmeStyles } from "../styles/components/aboutmeStyles";
+import {aboutmeStyles} from "../styles/components/AboutmeStyles"
 
 const Aboutme = () => {
   return (
