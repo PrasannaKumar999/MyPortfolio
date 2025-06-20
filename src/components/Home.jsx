@@ -33,7 +33,7 @@ const Home = ({ onLinkClick }) => {
             A passionate Frontend Developer | React Enthusiast | Crafting
             Immersive Web Experiences | creating impactful solutions
           </div>
-          <div onClick={() => onLinkClick("About")} className="btnExplore">Explore My Work</div>
+          <div onClick={() => onLinkClick("Projects")} className="btnExplore">Explore My Work</div>
         </div>
         <div className="arrowContainer" onClick={() => onLinkClick("About")}>
           <span className="arrowDown">

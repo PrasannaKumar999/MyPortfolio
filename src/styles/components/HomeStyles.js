@@ -283,4 +283,20 @@ export const HomeStyles = css`
     transform: translateY(-3px);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
   }
+
+  @media screen and (max-width: 768px) {
+    .headerText {
+      font-size: 28px;
+      line-height: 25px;
+    }
+    .bannerText {
+      font-size: 12px;
+      line-height: 18px;
+    }
+    .btnExplore {
+      font-size: 14px;
+      border-radius: 12px;
+      padding: 12px 24px;
+    }
+  }
 `;

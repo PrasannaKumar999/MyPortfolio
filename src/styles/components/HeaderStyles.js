@@ -25,6 +25,7 @@ export const headerStyles = css`
     font-size: 30px;
     font-weight: bold;
     color: #93c5fd;
+    cursor: pointer;
   }
   .rightHeader {
     display: flex;
@@ -61,5 +62,47 @@ export const headerStyles = css`
   .section:hover::after {
     width: 100%;
     color: #93c5fd;
+  }
+  .menuIcon {
+    display: none;
+  }
+  .btnDownload {
+    border: 1px solid #2d2e96;
+    border-radius: 12px;
+    padding: 12px 16px;
+    cursor: pointer;
+  }
+
+  @media screen and (max-width: 768px) {
+    .rightHeader {
+      display: none;
+    }
+    .menuIcon {
+      display: block;
+    }
+    .popup {
+      position: fixed;
+      height: 100vh;
+      width: 100vw;
+      top: 0px;
+      right: -1px;
+      bottom: 0px;
+      background: black;
+      width: 60%;
+      border-bottom-left-radius: 60px;
+      border-top-left-radius: 60px;
+    }
+    .closeIcon {
+      display: block;
+      padding: 30px 24px;
+      text-align: end;
+    }
+    .rightMobileHeader {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      align-items: flex-start;
+      padding-left: 100px;
+    }
   }
 `;

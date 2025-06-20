@@ -4,13 +4,14 @@ import Home from "./components/Home";
 import Header from "./components/Header";
 import { useRef } from "react";
 import { Projects } from "./components/Projects";
+import { Contact } from "./components/Contact";
 function App() {
   const sectionRefs = {
     Home: useRef(null),
     About: useRef(null),
     services: useRef(null),
     Projects: useRef(null),
-    contact: useRef(null),
+    Contact: useRef(null),
   };
   const scrollTo = (key, offset = 96) => {
     const top =
@@ -32,6 +33,9 @@ function App() {
       </section>
       <section ref={sectionRefs.Projects}>
         <Projects />
+      </section>
+      <section ref={sectionRefs.Contact}>
+        <Contact />
       </section>
     </>
   );
