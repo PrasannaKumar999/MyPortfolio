@@ -1,7 +1,7 @@
 import React from "react";
 import { ProjectsStyles } from "../styles/components/ProjectsStyles";
-import { aboutmeStyles } from "../styles/components/AboutmeStyles";
 import { ProjectCard } from "./ProjectCard";
+import AnimatedCard from "./AnimatedCard";
 
 export const Projects = () => {
   return (
@@ -10,12 +10,11 @@ export const Projects = () => {
       <div className="projectsContainer">
         <div className="projectsHeader">Projects</div>
         <div className="projectsCardContainer">
-          <ProjectCard />
-          <ProjectCard />
-          <ProjectCard />
-          <ProjectCard />
-          <ProjectCard />
-          <ProjectCard />
+          {[1, 2, 3, 4, 5, 6].map((ele,index) => (
+            <AnimatedCard key={index}>
+              <ProjectCard />
+            </AnimatedCard>
+          ))}
         </div>
       </div>
     </>
