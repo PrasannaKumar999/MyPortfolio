@@ -34,6 +34,14 @@ export const headerStyles = css`
     gap: 32px;
     margin-right: 50px;
   }
+  .activeSection {
+    color: #93c5fd;
+    font-size: 18px;
+    font-weight: 600;
+    color: #93c5fd;
+    cursor: pointer;
+    border-bottom: 4px solid transparent;
+  }
   .section {
     font-size: 18px;
     font-weight: 600;
@@ -103,6 +111,9 @@ export const headerStyles = css`
       gap: 30px;
       align-items: flex-start;
       padding-left: 100px;
+    }
+    .btnDownload{
+      display: none;
     }
   }
 `;

@@ -25,6 +25,7 @@ export const Contact = () => {
           ></path>
         </svg>
       ),
+      action: "call",
     },
     {
       title: "Email me",
@@ -56,6 +57,7 @@ export const Contact = () => {
           ></path>
         </svg>
       ),
+      action: "email",
     },
     {
       title: "Address",
@@ -103,7 +105,15 @@ export const Contact = () => {
                 <div className="icon">{ele?.icon}</div>
                 <div className="detailContainer">
                   <div className="detailHeader">{ele?.title}</div>
-                  <div className="detailDesc">{ele?.description}</div>
+                  <div className="detailDesc">
+                    {ele?.description == "call" ? (
+                      <a href="tel:7036770673">{ele.description}</a>
+                    ) : (
+                      <a href={`mailto:${ele.description}`}>
+                        {ele.description}
+                      </a>
+                    )}
+                  </div>
                 </div>
               </div>
             ))}

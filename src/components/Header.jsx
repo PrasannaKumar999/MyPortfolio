@@ -1,10 +1,15 @@
 import React from "react";
 import { headerStyles } from "../styles/components/HeaderStyles";
 import { useState } from "react";
+import { useEffect } from "react";
 
-const Header = ({ onLinkClick }) => {
+const Header = ({ onLinkClick, activeSection }) => {
   const sections = ["About", "Skills", "Projects", "Contact"];
   const [menuPopup, setMenuPopup] = useState(false);
+
+  useEffect(() => {
+    console.log(activeSection, "activeSection");
+  }, [activeSection]);
 
   return (
     <>
@@ -16,7 +21,12 @@ const Header = ({ onLinkClick }) => {
           </div>
           <div className="rightHeader">
             {sections.map((section) => (
-              <div className="section" onClick={() => onLinkClick(section)}>
+              <div
+                className={`${
+                  activeSection === section ? "activeSection" : "section"
+                }`}
+                onClick={() => onLinkClick(section)}
+              >
                 {section}
               </div>
             ))}

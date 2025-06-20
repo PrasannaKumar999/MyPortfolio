@@ -5,6 +5,9 @@ import Header from "./components/Header";
 import { useRef } from "react";
 import { Projects } from "./components/Projects";
 import { Contact } from "./components/Contact";
+import { Skills } from "./components/Skills";
+import { useEffect } from "react";
+import { useState } from "react";
 function App() {
   const sectionRefs = {
     Home: useRef(null),
@@ -12,6 +15,7 @@ function App() {
     services: useRef(null),
     Projects: useRef(null),
     Contact: useRef(null),
+    Skills: useRef(null),
   };
   const scrollTo = (key, offset = 96) => {
     const top =
@@ -22,14 +26,42 @@ function App() {
     });
   };
 
+  const [activeSection, setActiveSection] = useState("Home");
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            const sectionId = entry.target.getAttribute("data-id");
+            if (sectionId) setActiveSection(sectionId);
+          }
+        });
+      },
+      { threshold: 0.6 }
+    );
+
+    Object.entries(sectionRefs).forEach(([key, ref]) => {
+      if (ref.current) {
+        ref.current.setAttribute("data-id", key);
+        observer.observe(ref.current);
+      }
+    });
+
+    return () => observer.disconnect();
+  }, [sectionRefs]);
+
   return (
     <>
-      <Header onLinkClick={scrollTo} />
+      <Header onLinkClick={scrollTo} activeSection={activeSection} />
       <section ref={sectionRefs.Home}>
         <Home onLinkClick={scrollTo} />
       </section>
       <section ref={sectionRefs.About}>
         <Aboutme />
+      </section>
+      /
+      <section ref={sectionRefs.Skills}>
+        <Skills />
       </section>
       <section ref={sectionRefs.Projects}>
         <Projects />
