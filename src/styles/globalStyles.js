@@ -9,6 +9,7 @@ export const globalStyles = css`
     justify-content: center;
     align-items: center;
     gap: 32px;
+    padding-top: 60px;
   }
   .globalContainerHeader {
     color: #2d2e96;
