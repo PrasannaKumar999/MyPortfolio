@@ -45,7 +45,6 @@ export const ContactStyles = css`
     gap: 20px;
   }
   .contactDetailContainer {
-    width: 50%;
     display: flex;
     gap: 20px;
     align-items: stretch;

@@ -106,12 +106,14 @@ export const Contact = () => {
                 <div className="detailContainer">
                   <div className="detailHeader">{ele?.title}</div>
                   <div className="detailDesc">
-                    {ele?.description == "call" ? (
+                    {ele?.action == "call" ? (
                       <a href="tel:7036770673">{ele.description}</a>
-                    ) : (
+                    ) : ele?.action == "email" ? (
                       <a href={`mailto:${ele.description}`}>
                         {ele.description}
                       </a>
+                    ) : (
+                      ele.description
                     )}
                   </div>
                 </div>
