@@ -95,10 +95,10 @@ export const headerStyles = css`
       top: 0px;
       right: -1px;
       bottom: 0px;
-      background: black;
+      background: rgb(3 3 3 / 90%);
       width: 60%;
-      border-bottom-left-radius: 60px;
-      border-top-left-radius: 60px;
+      /* border-bottom-left-radius: 60px;
+      border-top-left-radius: 60px; */
     }
     .closeIcon {
       display: block;
@@ -109,10 +109,9 @@ export const headerStyles = css`
       display: flex;
       flex-direction: column;
       gap: 30px;
-      align-items: flex-start;
-      padding-left: 100px;
+      align-items: center;
     }
-    .btnDownload{
+    .btnDownload {
       display: none;
     }
   }
