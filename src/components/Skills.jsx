@@ -14,7 +14,7 @@ export const Skills = () => {
         <div className="skillBoxContainer">
           {skillCardData.map((ele) => (
             <div className="skillCard">
-              {ele.icon}
+              <div className="skillIcon">{ele.icon}</div>
               <div>{ele.name}</div>
               {/* <div>{ele.progress}</div> */}
             </div>

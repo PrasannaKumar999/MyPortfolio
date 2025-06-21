@@ -1,3 +1,6 @@
+const iconWidth = "40px";
+const iconHeight = "40px";
+
 export const skillCardData = [
   {
     name: "HTML",
@@ -6,11 +9,11 @@ export const skillCardData = [
         xmlns="http://www.w3.org/2000/svg"
         xmlns:xlink="http://www.w3.org/1999/xlink"
         enable-background="new 0 0 32 32"
-        height="50px"
+        height={iconHeight}
         id="Layer_1"
         version="1.0"
         viewBox="0 0 32 32"
-        width="50px"
+        width={iconWidth}
         xml:space="preserve"
       >
         <g>
@@ -44,11 +47,11 @@ export const skillCardData = [
         xmlns="http://www.w3.org/2000/svg"
         xmlns:xlink="http://www.w3.org/1999/xlink"
         enable-background="new 0 0 32 32"
-        height="50px"
+        height={iconHeight}
         id="Layer_1"
         version="1.0"
         viewBox="0 0 32 32"
-        width="50px"
+        width={iconWidth}
         xml:space="preserve"
       >
         <g>
@@ -81,11 +84,11 @@ export const skillCardData = [
       <svg
         xmlns="http://www.w3.org/2000/svg"
         xmlns:xlink="http://www.w3.org/1999/xlink"
-        height="50px"
+        height={iconHeight}
         // style="enable-background:new 0 0 512 512;"
         version="1.1"
         viewBox="0 0 512 512"
-        width="50px"
+        width={iconWidth}
         xml:space="preserve"
       >
         <g id="_x31_87-js">
@@ -119,9 +122,9 @@ export const skillCardData = [
     icon: (
       <svg
         fill="none"
-        height="50px"
+        height={iconHeight}
         viewBox="0 0 26 26"
-        width="50px"
+        width={iconWidth}
         xmlns="http://www.w3.org/2000/svg"
       >
         <path
@@ -141,8 +144,8 @@ export const skillCardData = [
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
         viewBox="0 0 223 236"
-        width="50px"
-        height="50px"
+        width={iconWidth}
+        height={iconHeight}
         class="angular-logo"
       >
         <g _ngcontent-ng-c586675657="" clip-path="url(#a)">
@@ -227,8 +230,8 @@ export const skillCardData = [
     name: "REACT",
     icon: (
       <svg
-        width="50px"
-        height="50px"
+        width={iconWidth}
+        height={iconHeight}
         viewBox="-10.5 -9.45 21 18.9"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
@@ -249,8 +252,8 @@ export const skillCardData = [
     icon: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        width="50px"
-        height="50px"
+        width={iconWidth}
+        height={iconHeight}
         viewBox="0 0 256 256"
         fill="none"
       >
@@ -266,11 +269,11 @@ export const skillCardData = [
     name: "GITHUB",
     icon: (
       <svg
-        height="50px"
+        height={iconHeight}
         aria-hidden="true"
         viewBox="0 0 24 24"
         version="1.1"
-        width="50px"
+        width={iconWidth}
         data-view-component="true"
         class="octicon octicon-mark-github v-align-middle"
       >
@@ -285,11 +288,11 @@ export const skillCardData = [
       <svg
         xmlns="http://www.w3.org/2000/svg"
         xmlns:xlink="http://www.w3.org/1999/xlink"
-        height="50px"
+        height={iconHeight}
         // style="enable-background:new 0 0 512 512;"
         version="1.1"
         viewBox="0 0 512 512"
-        width="50px"
+        width={iconWidth}
         xml:space="preserve"
       >
         <g id="_x39_7-docker">
@@ -382,9 +385,9 @@ export const skillCardData = [
     icon: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        height="50px"
+        height={iconHeight}
         viewBox="0 0 24 24"
-        width="50px"
+        width={iconWidth}
       >
         <path d="M18.5 9.51a4.22 4.22 0 0 1-1.91-1.34A5.77 5.77 0 0 0 12 6a4.72 4.72 0 0 0-5 4 3.23 3.23 0 0 1 3.5-1.49 4.32 4.32 0 0 1 1.91 1.35A5.77 5.77 0 0 0 17 12a4.72 4.72 0 0 0 5-4 3.2 3.2 0 0 1-3.5 1.51zm-13 4.98a4.22 4.22 0 0 1 1.91 1.34A5.77 5.77 0 0 0 12 18a4.72 4.72 0 0 0 5-4 3.23 3.23 0 0 1-3.5 1.49 4.32 4.32 0 0 1-1.91-1.35A5.8 5.8 0 0 0 7 12a4.72 4.72 0 0 0-5 4 3.2 3.2 0 0 1 3.5-1.51z" />
       </svg>
