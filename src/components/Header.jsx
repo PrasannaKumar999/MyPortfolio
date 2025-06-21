@@ -84,7 +84,9 @@ const Header = ({ onLinkClick, activeSection }) => {
             >
               {sections.map((section) => (
                 <div
-                  className="section"
+                  className={`${
+                    activeSection === section ? "activeSection" : "section"
+                  }`}
                   onClick={() => {
                     onLinkClick(section);
                     // setTimeout(() => setMenuPopup(false), 400);
