@@ -8,11 +8,11 @@ export const ProjectCard = ({ projectData }) => {
   const truncatedLength = 25;
 
   const words = projectData?.description?.split(" ");
-  const isLongText = words.length > truncatedLength;
-  const truncatedText = words.slice(0, truncatedLength).join(" ");
+  const isLongText = words?.length > truncatedLength;
+  const truncatedText = words?.slice(0, truncatedLength).join(" ");
 
   useEffect(() => {
-    console.log(words.length, "words");
+    console.log(words?.length, "words");
   }, [words]);
   return (
     <>
@@ -22,7 +22,7 @@ export const ProjectCard = ({ projectData }) => {
           <div className="imageContainer">image</div>
           <div className="bottomContainer">
             <div className="bottomCard">
-              <div className="projectName">{projectData.name}</div>
+              <div className="projectName">{projectData?.name}</div>
               <div className={`projectDesc`}>
                 <div>
                   {expanded || !isLongText ? projectData?.description : truncatedText + "... "}
@@ -39,7 +39,7 @@ export const ProjectCard = ({ projectData }) => {
             </div>
             <div className="bottomCard">
               <div className="ProjectTags">
-                {projectData.tech.map((ele) => (
+                {projectData?.tech?.map((ele) => (
                   <span className="projectTech">{ele}</span>
                 ))}
               </div>
