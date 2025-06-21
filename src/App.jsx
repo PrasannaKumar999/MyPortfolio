@@ -71,22 +71,24 @@ function App() {
 
   return (
     <>
-      <Header onLinkClick={scrollTo} activeSection={activeSection} />
-      <section ref={sectionRefs.Home} id="Home">
-        <Home onLinkClick={scrollTo} />
-      </section>
-      <section ref={sectionRefs.About} id="About">
-        <Aboutme />
-      </section>
-      <section ref={sectionRefs.Skills} id="Skills">
-        <Skills />
-      </section>
-      <section ref={sectionRefs.Projects} id="Projects">
-        <Projects />
-      </section>
-      <section ref={sectionRefs.Contact} id="Contact">
-        <Contact />
-      </section>
+      <div className="appContainer">
+          <Header onLinkClick={scrollTo} activeSection={activeSection} />
+        <section ref={sectionRefs.Home} id="Home">
+          <Home onLinkClick={scrollTo} />
+        </section>
+        <section ref={sectionRefs.About} id="About">
+          <Aboutme />
+        </section>
+        <section ref={sectionRefs.Skills} id="Skills">
+          <Skills />
+        </section>
+        <section ref={sectionRefs.Projects} id="Projects">
+          <Projects />
+        </section>
+        <section ref={sectionRefs.Contact} id="Contact">
+          <Contact />
+        </section>
+      </div>
     </>
   );
 }
