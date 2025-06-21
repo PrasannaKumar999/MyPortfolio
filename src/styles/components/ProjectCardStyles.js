@@ -19,6 +19,7 @@ export const ProjectCardStyles = css`
     overflow: hidden;
     transition: transform 0.4s ease, box-shadow 0.4s ease;
     border: 1px solid #e2e8f0;
+    height: 100%;
   }
   .cardContainer:hover {
     transform: scale(1.05);
@@ -33,8 +34,15 @@ export const ProjectCardStyles = css`
   .bottomContainer {
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    justify-content: space-between;
+    /* gap: 30px; */
     padding: 24px;
+    height: 100%;
+  }
+  .bottomCard {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
   }
   .projectName {
     font-size: 20px;
@@ -47,6 +55,19 @@ export const ProjectCardStyles = css`
     /* line-height: 14px; */
     color: #4b5563;
     font-weight: 400;
+  }
+  .textReadMore {
+    color: #6b7280;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  .trunck {
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
   .ProjectTags {
     display: flex;
@@ -72,6 +93,7 @@ export const ProjectCardStyles = css`
     /* font-weight: bold; */
   }
   .projectCta {
+    all: unset;
     background: linear-gradient(90deg, #6366f1, #3b82f6);
     transition: transform 0.3s ease;
     padding: 8px 20px;

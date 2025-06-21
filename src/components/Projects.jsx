@@ -3,6 +3,7 @@ import { ProjectsStyles } from "../styles/components/ProjectsStyles";
 import { ProjectCard } from "./ProjectCard";
 import AnimatedCard from "./AnimatedCard";
 import { globalStyles } from "../styles/globalStyles";
+import { projectData } from "../services/projectDataServices";
 
 export const Projects = () => {
   return (
@@ -12,9 +13,9 @@ export const Projects = () => {
       <div className="mainGlobalContainer">
         <div className="globalContainerHeader">Projects</div>
         <div className="projectsCardContainer">
-          {[1, 2, 3, 4, 5, 6].map((ele, index) => (
+          {projectData.map((ele, index) => (
             <AnimatedCard key={index}>
-              <ProjectCard />
+              <ProjectCard projectData={ele} />
             </AnimatedCard>
           ))}
         </div>
